@@ -166,3 +166,6 @@ cython_debug/
 
 # vs code
 .vscode
+
+# static audio files
+youtube_to_audio/audio_download/
