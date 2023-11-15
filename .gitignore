@@ -162,10 +162,11 @@ cython_debug/
 # static files
 *deepspeech-0.9.3-models.pbmm
 *deepspeech-0.9.3-models.scorer
-*config.json
 
 # vs code
 .vscode
+*.DS_Store
 
 # static audio files
 youtube_to_audio/audio_download/
+speech_to_text/config.json
