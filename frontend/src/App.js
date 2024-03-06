@@ -1,14 +1,18 @@
-import './App.css';
-import Summarization from "./components/Summarization/Summarization";
+import React from 'react';
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import Home from './components/Home/Home';
+import Summarization from './components/Link/Link';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Summarization />
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/link" element={<Summarization />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
