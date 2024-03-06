@@ -1,12 +1,14 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 from generate_audio import generate_audio
 from summarization_model import call_summarization_model
 from transcribe import transcribe_lecture
 
 app = Flask(__name__)
+CORS(app) 
 
-@app.route('/summarize', methods=['POST'])
+@app.route('/api/summarize', methods=['POST'])
 def summarize():
     """Summarizes a YouTube lecture given a link.
     Parameters:
@@ -19,7 +21,7 @@ def summarize():
         - Summarize the transcribed text.
         - Return the summary as a JSON response."""
     
-    youtube_link = request.json.get('youtube_link')
+    youtube_link = request.json.get('link')
 
     # Generate audio from the YouTube link
     audio_data = generate_audio(youtube_link)

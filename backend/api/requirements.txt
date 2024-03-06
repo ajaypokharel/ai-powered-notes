@@ -1,0 +1,6 @@
+
+transformers
+pytube
+numpy
+Flask
+Flask-Cors
