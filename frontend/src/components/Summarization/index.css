@@ -1,0 +1,85 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .transcribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5b2fb9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loading-spinner {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .transcribe-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .transcription-container {
+    margin-top: 20px;
+  }
+  
+  .transcription-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .transcription-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .copy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b6b7ba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background-color: #218838;
+  }
+  
+  .copy-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .copied-text {
+    display: block;
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
