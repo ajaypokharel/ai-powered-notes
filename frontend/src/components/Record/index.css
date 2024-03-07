@@ -1,0 +1,43 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .listening-indicator {
+    font-size: 1.2rem;
+  }
+  
+  .control-btn {
+    background-color: #4b59c2;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .transcript-box {
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  

@@ -16,11 +16,11 @@ const Summarization = () => {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://127.0.0.1:5000/api/summarize', {link});
+      const response = await axios.post('http://127.0.0.1:5000/api/link-summary', {link});
       setSummarization(response.data.summary);
       setCopied(false)
     } catch (error) {
-      console.error('Error summaring audio:', error);
+      console.error('Error summarzing audio:', error);
     } finally {
       setLoading(false);
     }
