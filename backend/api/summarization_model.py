@@ -4,6 +4,16 @@ from transformers import BartTokenizer, BartForConditionalGeneration
 def call_summarization_model(lecture_transcript):
 
     # Load the fine-tuned model and tokenizer
+    """Call the fine-tuned BART model to generate a summary of a given lecture transcript.
+    Parameters:
+        - lecture_transcript (str): The transcript of the lecture to be summarized.
+    Returns:
+        - generated_summary (str): The generated summary of the lecture.
+    Processing Logic:
+        - Load model and tokenizer.
+        - Tokenize and generate summary.
+        - Decode the generated summary.
+        - Return the generated summary."""
     model = BartForConditionalGeneration.from_pretrained('../../speech_to_text/fine_tuned_bart_model')
     tokenizer = BartTokenizer.from_pretrained('../../speech_to_text/fine_tuned_bart_model')
 
