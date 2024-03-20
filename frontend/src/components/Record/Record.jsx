@@ -66,7 +66,7 @@ const Record = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Speech to Text Transcription</h1>
+      <h1 className="title"><span className="blue-text">AI</span> Transcription Summary</h1>
       <div className="controls">
         <span className="listening-indicator">Listening: {isRecording ? 'On' : 'Off'}</span>
         <div>

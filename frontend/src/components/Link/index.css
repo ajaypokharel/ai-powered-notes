@@ -4,32 +4,37 @@
     padding: 20px;
   }
   
-  .header {
+  .header-link {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
   }
   
   .input-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .input-field {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    border-color: #9a7dd7;
+    border-radius: 8px;
   }
   
   .transcribe-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #5b2fb9;
+    background-color: #6056ff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
+  .transcribe-button:hover {
+    background-color: #8a83ed;
+  }
   .loading-spinner {
     display: inline-block;
     margin-left: 5px;
