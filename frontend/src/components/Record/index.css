@@ -1,23 +1,25 @@
 .container {
     text-align: center;
-    margin-top: 50px;
+    margin: 0 auto;
+    max-width: 680px;
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
   }
   
   .controls {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .listening-indicator {
     font-size: 1.2rem;
+    color: #666668;
   }
   
   .control-btn {
-    background-color: #4b59c2;
+    background-color: #6056ff;
     border: none;
     color: white;
     padding: 15px 20px;
@@ -25,19 +27,24 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px 5px;
     cursor: pointer;
     border-radius: 50%;
   }
   
+  .control-btn:hover {
+    color: #8088c7;
+  }
+
   .transcript-box {
     font-size: 1.2rem;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #9a7dd7;
     border-radius: 5px;
     min-height: 100px;
     background-color: #f9f9f9;
     margin: 0 auto;
     max-width: 600px;
+    margin-bottom: 20px;
   }
   

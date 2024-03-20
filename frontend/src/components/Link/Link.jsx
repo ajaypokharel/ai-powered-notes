@@ -38,7 +38,7 @@ const Summarization = () => {
 
   return (
     <div className="container">
-      <h1 className="header">SmartNotes</h1>
+      <h1 className="header-link">YouTube <span className="blue-text">AI</span> Summary</h1>
       <div className="input-container">
         <input
           className="input-field"
