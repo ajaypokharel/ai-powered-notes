@@ -14,8 +14,8 @@ def call_summarization_model(lecture_transcript):
         - Tokenize and generate summary.
         - Decode the generated summary.
         - Return the generated summary."""
-    model = BartForConditionalGeneration.from_pretrained('../../speech_to_text/fine_tuned_bart_model')
-    tokenizer = BartTokenizer.from_pretrained('../../speech_to_text/fine_tuned_bart_model')
+    model = BartForConditionalGeneration.from_pretrained('fine_tuned_bart_model')
+    tokenizer = BartTokenizer.from_pretrained('fine_tuned_bart_model')
 
     # Tokenize and generate summary
     inputs = tokenizer(lecture_transcript, return_tensors="pt", max_length=1024, truncation=True)
